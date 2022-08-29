@@ -33,7 +33,7 @@ ec.onGainSkillTries = function(self, skill, tries)
 	-- if you want to enable only for certain monster than change line below for:
 	-- if target and target:getName() == "Train" then
 	if target then
-		if self:getSlotItem(CONST_SLOT_LEFT):getId() then
+		if self:getSlotItem(CONST_SLOT_LEFT) then
 			whatBand = configBands[self:getSlotItem(CONST_SLOT_LEFT):getId()]
 			if not whatBand then
 				return tries
