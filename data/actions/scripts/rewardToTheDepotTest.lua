@@ -1,7 +1,6 @@
--- based on Snavy's zombie script.
--- test script for checking zombie script that I've written bcs I had some doubts
--- and errors.. (now I fixed them for myself)
--- remember to register in actions.xml
+
+-- test script for checking zombie script
+
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 local configRewards = {

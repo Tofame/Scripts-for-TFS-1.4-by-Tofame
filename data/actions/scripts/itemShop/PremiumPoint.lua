@@ -1,5 +1,3 @@
--- adds one premium point to the account for 1 premium point (item)
--- I got help, but I don't remember from who.. it was on otland
 local function doPlayerAddPremiumPoints(player, count)
    db.query('UPDATE accounts SET premium_points = premium_points+'.. count ..' WHERE id = ' .. getAccountNumberByPlayerName(getCreatureName(player)))
 end
