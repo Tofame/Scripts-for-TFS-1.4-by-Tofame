@@ -20,7 +20,7 @@ else -- if more than 1 hour.
 	player:sendTextMessage(MESSAGE_INFO_DESCR, "You now have: " .. hours .. " hours of exp boost!")
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You now have: " .. hours .. " hours of exp boost!")
 end
-player:setStorageValue(expStorage, (hours + os.time()))
+player:setStorageValue(expStorage, (seconds + os.time()))
 player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 item:remove(1)
 return true
